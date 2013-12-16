@@ -1,0 +1,302 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "..\..\Inc\ccx.h"
+#define APSTUDIO_HIDDEN_SYMBOLS
+#include "windows.h"
+#undef APSTUDIO_HIDDEN_SYMBOLS
+#include "winver.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+1 VERSIONINFO
+ FILEVERSION 0,10,0,0
+ PRODUCTVERSION 0,10,0,0
+ FILEFLAGSMASK 0x0L
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x10001L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904e4"
+        BEGIN
+            VALUE "CompanyName", "Dynamic Arcade"
+            VALUE "FileDescription", "TimeStamp Object for MMF2"
+            VALUE "FileVersion", "0.10"
+            VALUE "LegalCopyright", "Copyright © 2006 DynamicArcade"
+            VALUE "OriginalFilename", "TimeStamp.mfx"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1252
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Data
+//
+
+KPX_MAGICNUMBER RCDATA MOVEABLE PURE 
+BEGIN
+    0x2516, 0x5908
+END
+
+
+#if !defined(RUN_ONLY)
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+#if defined(APSTUDIO_INVOKED) || defined(EDITOR)
+#if defined(APSTUDIO_INVOKED)
+EXO_ICON$(EDITOR)       BITMAP                  "RES\\EXTICON.BMP"
+#else
+EXO_ICON                BITMAP                  "RES\\EXTICON.BMP"
+#endif
+#endif
+#if defined(APSTUDIO_INVOKED) || defined(EDITOR)
+#if defined(APSTUDIO_INVOKED)
+EXO_IMAGE$(EDITOR)      BITMAP                  "RES\\EXTIMG.BMP"
+#else
+EXO_IMAGE               BITMAP                  "RES\\EXTIMG.BMP"
+#endif
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+#if defined(APSTUDIO_INVOKED) || defined(EDITOR)
+#if defined(APSTUDIO_INVOKED)
+MN_EXPRESSIONS$(EDITOR) MENU 
+#else
+MN_EXPRESSIONS MENU 
+#endif
+BEGIN
+    POPUP ""
+    BEGIN
+        MENUITEM "Get Today's Stamp"				EID_GetTodayStamp
+        MENUITEM "Get Time Stamp"					EID_GetTimeStamp
+        MENUITEM "Get Timezone"						EID_GetTimezone
+        MENUITEM SEPARATOR
+        POPUP "Get Difference"
+        BEGIN
+            MENUITEM "Get Year Difference"			EID_GetYearDiff
+            MENUITEM "Get Month Difference"			EID_GetMonthDiff
+            MENUITEM "Get Day Difference"			EID_GetDayDiff
+            MENUITEM "Get Hours Difference"			EID_GetHoursDiff
+            MENUITEM "Get Minutes Difference"		EID_GetMinutesDiff
+            MENUITEM "Get Seconds Difference"		EID_GetSecondsDiff
+		END
+        MENUITEM SEPARATOR
+        POPUP "Number returns"
+        BEGIN
+            MENUITEM "Get Year"						EID_GetYear
+            MENUITEM "Get Month"					EID_GetMonth
+            MENUITEM "Get Day"						EID_GetDay
+            MENUITEM "Get Hours"					EID_GetHours
+            MENUITEM "Get Minutes"					EID_GetMinutes
+            MENUITEM "Get Seconds"					EID_GetSeconds
+            MENUITEM "Get Day of Week"				EID_GetDayofWeek
+	        MENUITEM SEPARATOR
+            MENUITEM "Add Years"					EID_AddYears
+            MENUITEM "Add Months"					EID_AddMonths
+            MENUITEM "Add Weeks"					EID_AddWeeks
+            MENUITEM "Add Days"						EID_AddDays
+            MENUITEM "Add Hours"					EID_AddHours
+            MENUITEM "Add Minutes"					EID_AddMinutes
+            MENUITEM "Add Seconds"					EID_AddSeconds
+        END
+        POPUP "Text returns"
+        BEGIN
+            MENUITEM "Get Full Date/Time String"	EID_GetFullString
+            MENUITEM "Get YYYYMMDD String"			EID_GetYYYYMMDD
+            MENUITEM "Get HHMMSS String"			EID_GetHHMMSS
+            MENUITEM "Convert TimeStamp to Text"	EID_GetAsText
+            MENUITEM "Convert Text to TimeStamp"	EID_GetVal
+        END
+        MENUITEM SEPARATOR
+    END
+END
+#endif
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""..\\..\\Inc\\ccx.h""\r\n"
+    "#define APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""windows.h""\r\n"
+    "#undef APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""winver.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    KPX_MARK                "MF2"
+    KPX_NAME                "TimeStamp object"
+END
+
+STRINGTABLE 
+BEGIN
+    EID_GetTodayStamp       "Today Stamp("
+    EID_GetTimeStamp        "Time Stamp("
+        EP0ID_GetTimeStamp      "Year"
+        EP1ID_GetTimeStamp      "Month"
+        EP2ID_GetTimeStamp      "Day"
+        EP3ID_GetTimeStamp      "Hours"
+        EP4ID_GetTimeStamp      "Minutes"
+        EP5ID_GetTimeStamp      "Seconds"
+    EID_GetTimezone         "Timezone("
+
+    EID_GetYearDiff         "TSYearDiff("
+        EP0ID_GetYearDiff       "TimeStamp1"
+        EP1ID_GetYearDiff       "TimeStamp2"
+    EID_GetMonthDiff        "TSMonthDiff("
+        EP0ID_GetMonthDiff      "TimeStamp1"
+        EP1ID_GetMonthDiff      "TimeStamp2"
+    EID_GetDayDiff          "TSDayDiff("
+        EP0ID_GetDayDiff        "TimeStamp1"
+        EP1ID_GetDayDiff        "TimeStamp2"
+    EID_GetHoursDiff        "TSHoursDiff("
+        EP0ID_GetHoursDiff      "TimeStamp1"
+        EP1ID_GetHoursDiff      "TimeStamp2"
+    EID_GetMinutesDiff      "TSMinutesDiff("
+        EP0ID_GetMinutesDiff    "TimeStamp1"
+        EP1ID_GetMinutesDiff    "TimeStamp2"
+    EID_GetSecondsDiff      "TSSecondsDiff("
+        EP0ID_GetSecondsDiff    "TimeStamp1"
+        EP1ID_GetSecondsDiff    "TimeStamp2"
+
+	EID_GetYear             "TSYear("
+	    EP0ID_GetYear           "TimeStamp"
+    EID_GetMonth            "TSMonth("
+	    EP0ID_GetMonth          "TimeStamp"
+    EID_GetDay              "TSDay("
+	    EP0ID_GetDay            "TimeStamp"
+    EID_GetHours            "TSHours("
+	    EP0ID_GetHours          "TimeStamp"
+    EID_GetMinutes          "TSMinutes("
+	    EP0ID_GetMinutes        "TimeStamp"
+    EID_GetSeconds          "TSSeconds("
+	    EP0ID_GetSeconds        "TimeStamp"
+    EID_GetDayofWeek        "TSDayofWeek("
+	    EP0ID_GetDayofWeek      "TimeStamp"
+
+    EID_AddYears            "AddYears("
+	    EP0ID_AddYears          "TimeStamp"
+	    EP1ID_AddYears          "Years_to_add"
+    EID_AddMonths           "AddMonths("
+	    EP0ID_AddMonths         "TimeStamp"
+	    EP1ID_AddMonths         "Months_to_add"
+    EID_AddWeeks            "AddWeeks("
+	    EP0ID_AddWeeks          "TimeStamp"
+	    EP1ID_AddWeeks          "Weeks_to_add"
+    EID_AddDays             "AddDays("
+	    EP0ID_AddDays           "TimeStamp"
+	    EP1ID_AddDays           "Days_to_add"
+    EID_AddHours            "AddHours("
+	    EP0ID_AddHours          "TimeStamp"
+	    EP1ID_AddHours          "Hours_to_add"
+    EID_AddMinutes          "AddMinutes("
+	    EP0ID_AddMinutes        "TimeStamp"
+	    EP1ID_AddMinutes        "Minutes_to_add"
+    EID_AddSeconds          "AddSeconds("
+	    EP0ID_AddSeconds        "TimeStamp"
+	    EP1ID_AddSeconds        "Seconds_to_add"
+
+	EID_GetFullString       "Full Date String("
+	    EP0ID_GetFullString     "TimeStamp"
+	EID_GetYYYYMMDD         "TSYYYYMMDD("
+	    EP0ID_GetYYYYMMDD       "TimeStamp"
+	EID_GetHHMMSS           "TSHHMMSS("
+	    EP0ID_GetHHMMSS         "TimeStamp"
+	EID_GetAsText           "TS_Str$("
+	    EP0ID_GetAsText         "TimeStamp"
+	EID_GetVal              "TS_Val("
+	    EP0ID_GetVal            "TimeStamp$"
+END
+
+STRINGTABLE 
+BEGIN
+    IDST_OBJNAME            "TimeStamp object"
+    IDST_AUTHOR             "Gareth Ben Martin of Dynamic Arcade"
+    IDST_COPYRIGHT          "Copyright © 2006 Dynamic Arcade"
+    IDST_COMMENT            "Manipulates timestamps."
+    IDST_HTTP               "http://www.dynamicarcade.co.uk/"
+END
+
+#endif  //Not RUN_ONLY
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
